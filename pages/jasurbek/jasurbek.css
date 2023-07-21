@@ -1,0 +1,138 @@
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+:root {
+  --primary: #123456;
+  --secondary: #EF6262;
+  --text-color: #333;
+  --white-color: #fff;
+  --main-font: 'Poppins', "Arial", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font);
+  line-height: 1.2;
+  font-size: 1.6rem;
+  color: var(--text-color);
+
+
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--main-font);
+}
+ul, ol {
+  list-style: none;
+}
+h1, h2, h3, h4, h5 {
+  font-family: var(--main-font);
+}
+main {
+  flex-grow: 1;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+.jasurbek-header__container{
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8rem  ;
+  
+}
+.jasurbek__list{
+  display: flex;
+  gap: 3.5rem;
+}
+.jasurbek__link{
+  font-size: 1.8rem;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+.jasurbek__link:hover{
+  color: var(--secondary);
+}
+.main-wrapper-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.9rem;
+  margin-bottom: 9rem;
+}
+.main-wrapper-div .wrapper__text{
+  color: var(--text-color);
+  margin-top: -20rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.main-wrapper-div h2, p{
+  text-align: center;
+  width: 60rem;
+  margin-right: 4.5rem;
+  margin-top: 2rem;
+}
+
+.main-hero-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.main-hero-wrapper h2{
+  margin-top: 4.5rem;
+  padding-bottom: 2rem;
+  font-size: 2.8rem;
+}
+.alone-h1{
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 3rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.main__footer{
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.main__footer h1{
+  margin-bottom: 6rem;
+}
+.footer-h2{
+  margin-bottom: 4rem;
+  transition: 0.3s;
+}
+.footer-h2:hover{
+  color: var(--secondary);
+}
+
